@@ -27,7 +27,7 @@
 	--mention-hover: #fb803a0d; /* mentions & mention messages when hovered */
 
 	--text-0: var(--bg-4); /* text on colored elements */
-	--text-1: hsl(220, 40%, 95%); /* bright text on colored elements */
+	--text-1: #4c4f69; /* bright text on colored elements */
 	--text-2: #4c4f69; /* headings and important text */
 	--text-3: #6c6f85; /* normal text */
 	--text-4: #8c8fa1; /* icon buttons and channels */
