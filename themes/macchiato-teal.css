@@ -1,0 +1,54 @@
+/**
+ * @name Catppuccin for midnight - Macchiato teal
+ * @description Soothing pastel theme for midnight
+ * @author Catppuccin
+ * @version 0.1.0
+ * @website https://github.com/uncenter/ctp-midnight
+ * @source https://github.com/uncenter/ctp-midnight/blob/main/themes/macchiato-teal.css
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+
+:root {
+	--font: 'gg sans';
+	--corner-text: 'Catppuccin';
+
+	--online-indicator: #a6da95;
+	--dnd-indicator: #ed8796;
+	--idle-indicator: #eed49f;
+	--streaming-indicator: #c6a0f6;
+
+	--accent-1: #c6a0f6; /* links */
+	--accent-2: #c6a0f6; /* general unread/mention elements */
+	--accent-3: #c6a0f6; /* accent buttons */
+	--accent-4: #a588d1; /* accent buttons when hovered */
+	--accent-5: #967cbe; /* accent buttons when clicked */
+	--mention: #a588d11A; /* mentions & mention messages */
+	--mention-hover: #a588d10D; /* mentions & mention messages when hovered */
+
+	--text-0: var(--bg-4); /* text on colored elements */
+	--text-1: hsl(220, 40%, 95%); /* bright text on colored elements */
+	--text-2: #cad3f5; /* headings and important text */
+	--text-3: #a5adcb; /* normal text */
+	--text-4: #8087a2; /* icon buttons and channels */
+	--text-5: #5b6078; /* muted channels/chats and timestamps */
+
+	--bg-1: #494d64; /* dark buttons when clicked */
+	--bg-2: #363a4f; /* dark buttons */
+	--bg-3: #1e2030; /* spacing, secondary elements */
+	--bg-4: #24273a; /* main background color */
+	--hover: #6e738d1A; /* channels and buttons when hovered */
+	--active: #6e738d33; /* channels and buttons when clicked or selected */
+	--message-hover: #1819261A; /* messages when hovered */
+
+	/* Unset unthemeable elements*/
+	--login-bg-filter: none; /* login background artwork */
+	--green-to-accent-3-filter: none; /* add friend page explore icon */
+	--blurple-to-accent-3-filter: none; /* add friend page school icon */
+}
+
+.childWrapper_a6ce15:has(> svg:not(.favoriteIcon_adf80e)) {
+	background: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png');
+	background-color: transparent !important;
+	background-size: cover;
+}
