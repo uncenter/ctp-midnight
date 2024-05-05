@@ -23,8 +23,8 @@
 	--accent-3: #ca9ee6; /* accent buttons */
 	--accent-4: #ac88c6; /* accent buttons when hovered */
 	--accent-5: #9c7eb6; /* accent buttons when clicked */
-	--mention: #ac88c61A; /* mentions & mention messages */
-	--mention-hover: #ac88c60D; /* mentions & mention messages when hovered */
+	--mention: #ac88c61a; /* mentions & mention messages */
+	--mention-hover: #ac88c60d; /* mentions & mention messages when hovered */
 
 	--text-0: var(--bg-4); /* text on colored elements */
 	--text-1: hsl(220, 40%, 95%); /* bright text on colored elements */
@@ -37,18 +37,12 @@
 	--bg-2: #414559; /* dark buttons */
 	--bg-3: #292c3c; /* spacing, secondary elements */
 	--bg-4: #303446; /* main background color */
-	--hover: #7379941A; /* channels and buttons when hovered */
+	--hover: #7379941a; /* channels and buttons when hovered */
 	--active: #73799433; /* channels and buttons when clicked or selected */
-	--message-hover: #2326341A; /* messages when hovered */
+	--message-hover: #2326341a; /* messages when hovered */
 
 	/* Unset unthemeable elements*/
 	--login-bg-filter: none; /* login background artwork */
 	--green-to-accent-3-filter: none; /* add friend page explore icon */
 	--blurple-to-accent-3-filter: none; /* add friend page school icon */
-}
-
-.childWrapper_a6ce15:has(> svg:not(.favoriteIcon_adf80e)) {
-	background: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png');
-	background-color: transparent !important;
-	background-size: cover;
 }
