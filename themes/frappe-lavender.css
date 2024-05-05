@@ -18,13 +18,13 @@
 	--idle-indicator: #e5c890;
 	--streaming-indicator: #ca9ee6;
 
-	--accent-1: #ca9ee6; /* links */
-	--accent-2: #ca9ee6; /* general unread/mention elements */
-	--accent-3: #ca9ee6; /* accent buttons */
-	--accent-4: #ac88c6; /* accent buttons when hovered */
-	--accent-5: #9c7eb6; /* accent buttons when clicked */
-	--mention: #ac88c61a; /* mentions & mention messages */
-	--mention-hover: #ac88c60d; /* mentions & mention messages when hovered */
+	--accent-1: #babbf1; /* links */
+	--accent-2: #babbf1; /* general unread/mention elements */
+	--accent-3: #babbf1; /* accent buttons */
+	--accent-4: #9fa0cf; /* accent buttons when hovered */
+	--accent-5: #9192be; /* accent buttons when clicked */
+	--mention: #9fa0cf1a; /* mentions & mention messages */
+	--mention-hover: #9fa0cf0d; /* mentions & mention messages when hovered */
 
 	--text-0: var(--bg-4); /* text on colored elements */
 	--text-1: hsl(220, 40%, 95%); /* bright text on colored elements */
