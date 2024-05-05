@@ -10,7 +10,7 @@ whiskers:
 {%- set palette = flavor.colors -%}
 
 /**
- * @name Catppuccin for midnight - {{ flavor.name }} {{ accent }}
+ * @name Catppuccin for midnight - {{ flavor.name }} {{ accent | capitalize }}
  * @description Soothing pastel theme for midnight
  * @author Catppuccin
  * @version 0.1.0
