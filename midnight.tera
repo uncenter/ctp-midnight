@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: "2.1.0"
+  version: "2.2.0"
   matrix:
     - flavor
     - accent
@@ -24,33 +24,33 @@ whiskers:
 	--font: 'gg sans';
 	--corner-text: 'Catppuccin';
 
-	--online-indicator: #{{ palette.green.hex }};
-	--dnd-indicator: #{{ palette.red.hex }};
-	--idle-indicator: #{{ palette.yellow.hex }};
-	--streaming-indicator: #{{ palette.mauve.hex }};
+	--online-indicator: #{{ green.hex }};
+	--dnd-indicator: #{{ red.hex }};
+	--idle-indicator: #{{ yellow.hex }};
+	--streaming-indicator: #{{ mauve.hex }};
 
 	--accent-1: #{{ palette[accent].hex }}; /* links */
 	--accent-2: #{{ palette[accent].hex }}; /* general unread/mention elements */
 	--accent-3: #{{ palette[accent].hex }}; /* accent buttons */
-	--accent-4: #{{ palette[accent] | mix(color=palette.base, amount=0.8) | get(key="hex") }}; /* accent buttons when hovered */
-	--accent-5: #{{ palette[accent] | mix(color=palette.base, amount=0.7) | get(key="hex") }}; /* accent buttons when clicked */
-	--mention: #{{ palette[accent] | mix(color=palette.base, amount=0.8) | get(key="hex") }}1a; /* mentions & mention messages */
-	--mention-hover: #{{ palette[accent] | mix(color=palette.base, amount=0.8) | get(key="hex") }}0d; /* mentions & mention messages when hovered */
+	--accent-4: #{{ palette[accent] | mix(color=base, amount=0.8) | get(key="hex") }}; /* accent buttons when hovered */
+	--accent-5: #{{ palette[accent] | mix(color=base, amount=0.7) | get(key="hex") }}; /* accent buttons when clicked */
+	--mention: #{{ palette[accent] | mix(color=base, amount=0.8) | get(key="hex") }}1a; /* mentions & mention messages */
+	--mention-hover: #{{ palette[accent] | mix(color=base, amount=0.8) | get(key="hex") }}0d; /* mentions & mention messages when hovered */
 
 	--text-0: var(--bg-4); /* text on colored elements */
-	--text-1: #{{ palette.text.hex }}; /* bright text on colored elements */
-	--text-2: #{{ palette.text.hex }}; /* headings and important text */
-	--text-3: #{{ palette.subtext0.hex }}; /* normal text */
-	--text-4: #{{ palette.overlay1.hex }}; /* icon buttons and channels */
-	--text-5: #{{ palette.surface2.hex }}; /* muted channels/chats and timestamps */
+	--text-1: #{{ text.hex }}; /* bright text on colored elements */
+	--text-2: #{{ text.hex }}; /* headings and important text */
+	--text-3: #{{ subtext0.hex }}; /* normal text */
+	--text-4: #{{ overlay1.hex }}; /* icon buttons and channels */
+	--text-5: #{{ surface2.hex }}; /* muted channels/chats and timestamps */
 
-	--bg-1: #{{ palette.surface1.hex }}; /* dark buttons when clicked */
-	--bg-2: #{{ palette.surface0.hex }}; /* dark buttons */
-	--bg-3: #{{ palette.mantle.hex }}; /* spacing, secondary elements */
-	--bg-4: #{{ palette.base.hex }}; /* main background color */
-	--hover: #{{ palette.overlay0.hex }}1a; /* channels and buttons when hovered */
-	--active: #{{ palette.overlay0.hex }}33; /* channels and buttons when clicked or selected */
-	--message-hover: #{{ palette.crust.hex }}1a; /* messages when hovered */
+	--bg-1: #{{ surface1.hex }}; /* dark buttons when clicked */
+	--bg-2: #{{ surface0.hex }}; /* dark buttons */
+	--bg-3: #{{ mantle.hex }}; /* spacing, secondary elements */
+	--bg-4: #{{ base.hex }}; /* main background color */
+	--hover: #{{ overlay0.hex }}1a; /* channels and buttons when hovered */
+	--active: #{{ overlay0.hex }}33; /* channels and buttons when clicked or selected */
+	--message-hover: #{{ crust.hex }}1a; /* messages when hovered */
 
 	/* Unset unthemeable elements*/
 	--login-bg-filter: none; /* login background artwork */
