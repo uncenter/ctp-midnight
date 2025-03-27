@@ -7,7 +7,7 @@
  * @source https://github.com/uncenter/ctp-midnight/blob/main/themes/mocha-yellow.css
 */
 
-@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
 :root {
 	--font: 'gg sans';
