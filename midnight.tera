@@ -7,15 +7,15 @@ whiskers:
   filename: 'themes/{{ flavor.identifier }}-{{ accent }}.css'
 ---
 
-{%- set palette = flavor.colors -%}
+{%- set accent = flavor.colors[accent]-%}
 
 /**
- * @name Catppuccin for midnight - {{ flavor.name }} {{ accent | capitalize }}
+ * @name Catppuccin for midnight - {{ flavor.name }} {{ accent.name }}
  * @description Soothing pastel theme for midnight
  * @author Catppuccin
  * @version 0.1.0
  * @website https://github.com/uncenter/ctp-midnight
- * @source https://github.com/uncenter/ctp-midnight/blob/main/themes/{{ flavor.identifier }}-{{ accent }}.css
+ * @source https://github.com/uncenter/ctp-midnight/blob/main/themes/{{ flavor.identifier }}-{{ accent.identifier }}.css
 */
 
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
@@ -29,13 +29,13 @@ whiskers:
 	--idle-indicator: #{{ yellow.hex }};
 	--streaming-indicator: #{{ mauve.hex }};
 
-	--accent-1: #{{ palette[accent].hex }}; /* links */
-	--accent-2: #{{ palette[accent].hex }}; /* general unread/mention elements */
-	--accent-3: #{{ palette[accent].hex }}; /* accent buttons */
-	--accent-4: #{{ palette[accent] | mix(color=base, amount=0.8) | get(key="hex") }}; /* accent buttons when hovered */
-	--accent-5: #{{ palette[accent] | mix(color=base, amount=0.7) | get(key="hex") }}; /* accent buttons when clicked */
-	--mention: #{{ palette[accent] | mix(color=base, amount=0.8) | get(key="hex") }}1a; /* mentions & mention messages */
-	--mention-hover: #{{ palette[accent] | mix(color=base, amount=0.8) | get(key="hex") }}0d; /* mentions & mention messages when hovered */
+	--accent-1: #{{ accent.hex }}; /* links */
+	--accent-2: #{{ accent.hex }}; /* general unread/mention elements */
+	--accent-3: #{{ accent.hex }}; /* accent buttons */
+	--accent-4: #{{ accent | mix(color=base, amount=0.8) | get(key="hex") }}; /* accent buttons when hovered */
+	--accent-5: #{{ accent | mix(color=base, amount=0.7) | get(key="hex") }}; /* accent buttons when clicked */
+	--mention: #{{ accent | mix(color=base, amount=0.8) | get(key="hex") }}1a; /* mentions & mention messages */
+	--mention-hover: #{{ accent | mix(color=base, amount=0.8) | get(key="hex") }}0d; /* mentions & mention messages when hovered */
 
 	--text-0: var(--bg-4); /* text on colored elements */
 	--text-1: #{{ text.hex }}; /* bright text on colored elements */
@@ -48,9 +48,9 @@ whiskers:
 	--bg-2: #{{ surface0.hex }}; /* dark buttons */
 	--bg-3: #{{ mantle.hex }}; /* spacing, secondary elements */
 	--bg-4: #{{ base.hex }}; /* main background color */
-	--hover: #{{ overlay0.hex }}1a; /* channels and buttons when hovered */
-	--active: #{{ overlay0.hex }}33; /* channels and buttons when clicked or selected */
-	--message-hover: #{{ crust.hex }}1a; /* messages when hovered */
+	--hover: #{{ overlay0 | mod(opacity=0.1) | get(key="hex") }}; /* channels and buttons when hovered */
+	--active: #{{ overlay0 | mod(opacity=0.2) | get(key="hex") }}; /* channels and buttons when clicked or selected */
+	--message-hover: #{{ crust | mod(opacity=0.1) | get(key="hex") }}; /* messages when hovered */
 
 	/* Unset unthemeable elements*/
 	--login-bg-filter: none; /* login background artwork */
