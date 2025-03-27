@@ -23,6 +23,7 @@
 	--accent-3: #1e66f5; /* accent buttons */
 	--accent-4: #4882f5; /* accent buttons when hovered */
 	--accent-5: #5c90f5; /* accent buttons when clicked */
+	--accent-new: #1e66f5; /* new indicator */
 	--mention: #4882f51a; /* mentions & mention messages */
 	--mention-hover: #4882f50d; /* mentions & mention messages when hovered */
 
